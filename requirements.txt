@@ -1,1 +1,3 @@
-# 개발 의존 패키지 추가
+scikit-learn
+beautifulsoup4
+selenium
