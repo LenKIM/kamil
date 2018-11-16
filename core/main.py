@@ -26,7 +26,7 @@ class Main:
             )
             for html_single in company_selector:
                 a = BeautifulSoup(html_single.string, 'html.parser')
-                list_of_company.append()
+                list_of_company.append(a.text)
             driver.find_element_by_xpath('//*[@id="main_pack"]/div[2]/div[2]/div[4]/div/a[2]').click()
             index = index + 1
 
@@ -45,5 +45,6 @@ class Main:
         html = driver.page_source
         return driver, html
 
-a =  Main()
+
+a = Main()
 a.naver_crawler()
