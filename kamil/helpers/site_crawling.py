@@ -35,9 +35,9 @@ class SiteCrawling:
 
         driver = webdriver.Chrome(chrome_driver_path)
         driver.implicitly_wait(wait_time)
-        driver.get(naver_site)
+        driver.get(site_naver)
 
-        if input_args is naver_site:
+        if input_args is site_naver:
             driver.find_element_by_id('query').send_keys(search_query)
             driver.find_element_by_xpath('//*[@id="search_btn"]').click()
 
